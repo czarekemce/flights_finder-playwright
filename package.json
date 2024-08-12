@@ -2,7 +2,9 @@
   "name": "loty_pw",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "search": "npx playwright test tests/example.spec.ts --project=chromium"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
