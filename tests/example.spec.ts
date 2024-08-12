@@ -17,6 +17,11 @@ test.describe('Tenerife flights', () => {
     await basePage.context.clearCookies();
   });
 
+  test('6 days', async ({ page }) => {
+    test.setTimeout(5000000);
+    await basePage.wholeProcess(6)
+  });
+
   test('7 days', async ({ page }) => {
     test.setTimeout(5000000);
     await basePage.wholeProcess(7)

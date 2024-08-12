@@ -128,6 +128,11 @@ export class BasePage {
 
       if (returnDay > 30) {
         returnDay -= 31; 
+        returnMonth = '10'
+        if (returnDay == 0) {
+          returnDay += 30;
+          returnMonth = departureMonth
+        }
       }
 
       if (day < 15) {
